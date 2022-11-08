@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Suli
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Név Plz");
+            string nev = Console.ReadLine();
+            Console.WriteLine("Szoszi, {0}", nev);
+            
+        }
+    }
+}
+            - - -
+            int hossz = 45;
+            Console.Write("A négyzet kerülete: ");
+            Console.WriteLine(4 * hossz);
+            Console.WriteLine("A {0} oldalú négyzet területe {1}", hossz, hossz * hossz); 
+            - - - 
+            
+            - - -
+            int szülév = 1994;
+            Console.WriteLine("{0}-ban/ben születtem.\n Most {1} éves vagyok.", szülév, 2022 - szülév);
+            - - -
+            
+            - - -
+            int r;
+            string sugar;
+            Console.WriteLine("Adja meg  akör sugarát: ");
+            sugar = Console.ReadLine();
+            r = int.Parse(sugar); //Számmá váltja
+            Console.WriteLine("A/Az {0} sugarú kör kerülete: {1}", r, 2 * r * 3.14);
+            Console.WriteLine("A/Az {0} sugarú kör területe: {1}", r, r * r * 3.14);
+            - - - 
+            
