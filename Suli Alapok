@@ -39,3 +39,70 @@ namespace Suli
             Console.WriteLine("A/Az {0} sugarú kör területe: {1}", r, r * r * 3.14);
             - - - 
             
+            - - - 
+            int szülév;
+            int dátum;
+            string segéd;
+            Console.WriteLine("Adja meg a születési évet");
+            segéd = Console.ReadLine();
+            szülév = int.Parse(segéd);
+            Console.WriteLine("Adja meg az aktuális évszámot");
+            segéd = Console.ReadLine();
+            dátum = int.Parse(segéd);
+            Console.WriteLine("Aki {0}-ban született, most {1} éves.", szülév, dátum - szülév);
+            - - -
+            
+            - - -
+            // TÉGLALAP
+            int aoldal, boldal;
+            Console.WriteLine("Adja meg a téglalap A oldalát!");
+            aoldal = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Adja meg a téglalap B oldalát!");
+            boldal = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("A(z) {0} és {1} oldalú téglalap Kerülete: {2}. Területe: {3}", aoldal, boldal, 2 * (aoldal + boldal), aoldal * boldal);
+            - - - 
+          
+            - - -
+            // HÁROMSZÖG Kerület
+            int aoldal, boldal, coldal;
+            Console.WriteLine("Első oldal");
+            aoldal = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Második oldal");
+            boldal = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Harmadik oldal");
+            coldal = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("A {0} és {1} és {2} oldalú háromszög Kerülete: {3}", aoldal, boldal, coldal, aoldal + boldal + coldal);
+            - - - 
+            
+            - - -
+            // MAGASSÁG (if else)
+            int magasság;
+            Console.WriteLine("Adja meg a magasságát!");
+            magasság = Convert.ToInt32(Console.ReadLine());
+            if (magasság >= 180)
+            {
+                Console.WriteLine("Magas vagy.");
+            }
+            else
+            {
+                Console.WriteLine("Alacsony vagy.");
+            }
+            
+            // VAGY...
+            
+            int magasság;
+            string segéd;
+            Console.WriteLine("Kérem adja meg magasságát!");
+            segéd = Console.ReadLine();
+            magasság = int.Parse(segéd);
+            if (magasság >= 180)
+            {
+                Console.WriteLine("Magas vagy");
+            }
+            else
+            {
+                Console.WriteLine("Alacsony vagy");
+            }
+            
+            - - -
+            
